@@ -1,0 +1,55 @@
+.about {
+  width: 50%;
+}
+
+.about-heading {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.about-heading > h2 {
+  font-family: "Playfair Display", Times Roman, serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-me {
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  padding-bottom: 50px;
+}
+
+.skills > h2, .education > h2 {
+  font-family: "Playfair Display", Times Roman, serif;
+  padding-bottom: 1rem;
+}
+
+.skills {
+  text-align: center;
+}
+
+.education {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.education .school {
+  float: left;
+  width: 33%;
+  border-left: 1px solid #ccc;
+}
+
+.education .school .name {
+  font-size: 1.2rem;
+  padding-bottom: 8px;
+}
+
+.education .school .place {
+  padding-bottom: 4px;
+}
+
+.education .school:nth-child(2) {
+  border-left: none;
+}

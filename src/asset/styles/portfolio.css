@@ -1,0 +1,102 @@
+.portfolio-heading {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.portfolio-heading > h2 {
+  font-family: "Playfair Display", Times Roman, serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.load-more button {
+  padding: 1rem 2.5rem;
+  transition: 200ms;
+  display: inline-block;
+  border: 3px solid #171717;
+  background: #fff;
+  color: #171717;
+  cursor: pointer;
+  outline: none;
+}
+
+.load-more button:hover {
+  background: #171717;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 8px #171717;
+}
+
+
+/* PROJECT CARDS */
+
+.project-card {
+  display: block;
+  width: calc(50% - 2rem);
+  float: left;
+  margin: 1rem;
+  position: relative;
+  transition: 200ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-card::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -130%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transform: rotateZ(10deg) scale(2);
+  transition: 400ms;
+}
+
+.project-card:hover::after {
+  bottom: 0%;
+  transform: rotateZ(45deg) scale(2);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.project-card .title-wrapper {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.project-card .title-wrapper .title {
+  font-size: 30px;
+  font-family: "Playfair Display", Times Roman, serif;
+  color: #fff;
+  padding-bottom: 1rem;
+  transition: 400ms;
+  transition-delay: 150ms;
+}
+
+.project-card:hover .title {
+  padding-left: 2rem;
+}
+
+.project-card:hover .tech {
+  color: #ddd;
+}
+
+.project-card .tech {
+  color: #151515;
+}
+
+@media (max-width: 800px) {
+  .project-card {
+    width: calc(100% - 2rem);
+  }
+}

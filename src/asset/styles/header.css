@@ -1,0 +1,52 @@
+.header {
+  padding: 2rem 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .name {
+  float: left;
+  font-weight: bold;
+}
+
+.header .links {
+  float: right;
+}
+
+.header .links a {
+  padding: 0 2rem;
+  color: #7E7E7E;
+  position: relative;
+  transition: 200ms;
+}
+
+.header .links a::after {
+  content: '';
+  display: inline-block;
+  background: #171717;
+  height: 2px;
+  width: 0%;
+  margin: auto;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transition: 200ms;
+}
+
+.header .links a:hover {
+  color: #171717;
+}
+
+.header .links a:hover::after {
+  width: 60%;
+  left: 20%;
+}

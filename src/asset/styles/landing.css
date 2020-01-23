@@ -1,0 +1,67 @@
+.landing {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #171717;
+}
+
+.landing .frontend {
+  position: relative;
+  top: 20px;
+  text-transform: uppercase;
+}
+
+.landing .webdev {
+  font-family: 'Playfair Display', serif;
+  font-size: 72px;
+}
+
+.landing .interests {
+  color: #7E7E7E;
+}
+
+.landing .buttons {
+  padding-top: 30px;
+}
+
+.landing .buttons a {
+  padding: 1rem 2.5rem;
+  transition: 200ms;
+  display: inline-block;
+}
+
+.landing .buttons a.portfolio {
+  border: 3px solid #171717;
+  background: #fff;
+  color: #171717;
+  margin-right: 10px;
+}
+
+.landing .buttons a.contact {
+  border: 3px solid #171717;
+  background: #171717;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.landing .buttons a.portfolio:hover {
+  background: #171717;
+  color: #fff;
+}
+
+.landing .buttons a.contact:hover {
+  background: #fff;
+  color: #171717;
+}
+
+.landing .social-links {
+  padding-top: 40px;
+}
+
+.landing .social-links a {
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  font-size: 20px;
+}

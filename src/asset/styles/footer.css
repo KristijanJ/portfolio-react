@@ -1,0 +1,38 @@
+.footer {
+  padding: 3rem 1rem;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.links {
+  float: left;
+}
+
+.footer .social-links {
+  float: right;
+}
+
+.footer .social-links a {
+  color: #171717;
+  padding: 0 1rem;
+}
+
+.footer .links a {
+  padding: 0 1rem;
+  color: #7E7E7E;
+  position: relative;
+  transition: 200ms;
+}
+
+.footer .links a:hover {
+  color: #171717;
+}
