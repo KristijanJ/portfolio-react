@@ -34,6 +34,10 @@
   padding-bottom: 10px;
 }
 
+.project-details .tech {
+  color: #666;
+}
+
 .project-details .buttons {
   padding-top: 30px;
 }
@@ -66,4 +70,28 @@
 .project-details .buttons a.code:hover {
   background: #fff;
   color: #171717;
+}
+
+@media (max-width: 800px) {
+  .project-details {
+    width: 100%;
+    float: none;
+  }
+  .project-image {
+    width: 100%;
+    float: none;
+    padding-bottom: 59%;
+  }
+  .project-details .description {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .project-details .tech {
+    font-size: 14px;
+  }
+  .project-details .buttons a {
+    padding: 0.4rem 1.6rem;
+    transition: 200ms;
+    display: inline-block;;
+  }
 }

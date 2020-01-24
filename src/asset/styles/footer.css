@@ -13,7 +13,7 @@
   clear: both;
 }
 
-.links {
+.footer .links {
   float: left;
 }
 
@@ -35,4 +35,17 @@
 
 .footer .links a:hover {
   color: #171717;
+}
+
+@media (max-width: 600px) {
+  .footer .links {
+    float: none;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .footer .social-links {
+    float: none;
+    text-align: center;
+  }
 }

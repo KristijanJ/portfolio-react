@@ -53,3 +53,9 @@
 .education .school:nth-child(2) {
   border-left: none;
 }
+
+@media (max-width: 1000px) {
+  .about {
+    width: 80%;
+  }
+}

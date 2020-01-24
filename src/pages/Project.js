@@ -18,12 +18,14 @@ class Project extends Component {
               <p>Coded with <i className="fas fa-heart" style={{ color: "red" }}></i>!</p>
             </div>
 
+            <div className="project-image" style={{ backgroundImage: `url(${project.image})` }}></div>
+
             <div className="project-details">
               <div className="description">{project.description}</div>
               <div className="tech">
                 {project.tech.map((tech, i) => {
                   return i + 1 >= project.tech.length ?
-                  (<span>{tech} </span>) : (<span>{tech} | </span>);
+                  (<span key={tech}>{tech} </span>) : (<span key={tech}>{tech} | </span>);
                 })}
               </div>
               <div className="buttons">
@@ -31,8 +33,6 @@ class Project extends Component {
                 <a target="_blank" rel="noopener noreferrer" href={project.codeUrl} className="code">Code</a>
               </div>
             </div>
-
-            <div className="project-image" style={{ backgroundImage: `url(${project.image})` }}></div>
 
           </div>
         ) : (
