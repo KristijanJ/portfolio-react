@@ -1,0 +1,67 @@
+  {
+    "projects": [
+      {
+        "id": 1,
+        "title": "Crunch App",
+        "description": "This project was made as homework for the JavaScript Academy at Semos. It uses an API to search for recipes.",
+        "image": "http://kristijanjovanovski.com/project-images/crunch-app_preview.png",
+        "tech": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+        "url": "http://blooming-eyrie-95777.herokuapp.com/",
+        "codeUrl": "https://github.com/KristijanJ/crunch-app"
+      },
+      {
+        "id": 2,
+        "title": "React ToDo",
+        "description": "This project was done as an exercise on building a simple ToDo app in React.",
+        "image": "http://kristijanjovanovski.com/project-images/react-todo-app_preview.png",
+        "tech": ["HTML", "CSS", "JavaScript", "React"],
+        "url": "http://kristijanjovanovski.com/project/ReactToDo/",
+        "codeUrl": "https://github.com/KristijanJ/react-todo-app"
+      },
+      {
+        "id": 3,
+        "title": "Healthy Tea",
+        "description": "Followed a template I found online and tried to replicate it as best as I could.",
+        "image": "http://kristijanjovanovski.com/project-images/healthytea_preview.png",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "url": "http://kristijanjovanovski.com/project/HealthyTea/",
+        "codeUrl": "https://github.com/KristijanJ/HealthyTea"
+      },
+      {
+        "id": 4,
+        "title": "Catch of the Day",
+        "description": "Built following a tutorial by WesBos.",
+        "image": "http://kristijanjovanovski.com/project-images/catch-of-the-day_preview.png",
+        "tech": ["HTML", "CSS", "JavaScript", "React", "Firebase"],
+        "url": "http://catchoftheday.kristijanjovanovski.com/",
+        "codeUrl": "https://github.com/KristijanJ/React-For-Beginners"
+      },
+      {
+        "id": 5,
+        "title": "Netflix Replica",
+        "description": "Built following a tutorial by TraversyMedia on YouTube.",
+        "image": "http://kristijanjovanovski.com/project-images/netflix-replica_preview.png",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "url": "http://kristijanjovanovski.com/project/NetflixReplica/",
+        "codeUrl": "https://github.com/KristijanJ/NetflixReplica"
+      },
+      {
+        "id": 6,
+        "title": "Green Portfolio",
+        "description": "",
+        "image": "http://kristijanjovanovski.com/img/project5-preview.png",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "url": "",
+        "codeUrl": ""
+      },
+      {
+        "id": 7,
+        "title": "Card Design",
+        "description": "",
+        "image": "http://kristijanjovanovski.com/img/project6-preview.png",
+        "tech": ["HTML", "CSS", "JavaScript"],
+        "url": "",
+        "codeUrl": ""
+      }
+    ]
+  }

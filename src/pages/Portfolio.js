@@ -1,28 +1,12 @@
 import React, { Component } from "react";
-import projects from "../asset/projects";
 import Header from "../components/Header";
 import "../asset/styles/portfolio.css";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
 
 class Portfolio extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { projects: [], visible: 4, increment: 4 }
-  }
-
-  componentDidMount() {
-    this.setState({ projects: projects.slice(0, this.state.visible) })
-  }
-
-  loadMore = () => {
-    this.setState({ 
-      projects: projects.slice(0, this.state.visible + this.state.increment),
-      visible: this.state.visible + this.state.increment
-    });
-  }
-
   render() {
+    const visible = this.props.visible;
     return (
       <div className="app-container">
         <Header />
@@ -34,18 +18,23 @@ class Portfolio extends Component {
           </div>
         </div>
 
-        <div className="container">
-          {this.state.projects.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+        {this.props.projects.length > 0 ? (
+          <div className="container">
+            {this.props.projects.slice(0, visible).map(project => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
 
-        {
-          this.state.visible >= projects.length ? null :
-          <div className="load-more">
-            <button onClick={this.loadMore}>Load More!</button>
+            {visible >= this.props.projects.length ? null : (
+              <div className="load-more">
+                <button onClick={this.props.loadMore}>Load More!</button>
+              </div>
+            )}
           </div>
-        }
+        ) : (
+          <div className="container">
+            <div className="loading">Loading...</div>
+          </div>
+        )}
 
         <Footer />
       </div>

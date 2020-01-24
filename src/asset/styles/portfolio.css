@@ -57,7 +57,7 @@
   left: 0;
   background: rgba(0, 0, 0, 0.2);
   transform: rotateZ(10deg) scale(2);
-  transition: 400ms;
+  transition: all 400ms ease;
 }
 
 .project-card:hover::after {
