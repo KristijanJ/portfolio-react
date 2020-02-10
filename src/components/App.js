@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://kristijanjovanovski.com/projects.json")
+    fetch("https://raw.githubusercontent.com/KristijanJ/kristijanj.github.io/master/projects.json")
       .then(res => res.json())
       .then(data => this.setState({ projects: data.projects }))
       .catch(error => console.error(error));
@@ -44,9 +44,9 @@ class App extends Component {
             />
           )}
         />
-        <Route path="/about" render={props => <About {...props} />} />
-        <Route path="/contact" render={props => <Contact {...props} />} />
-        <Route path="/" render={props => <Home {...props} />} />
+        <Route path={process.env.PUBLIC_URL + '/about'} render={props => <About {...props} />} />
+        <Route path={process.env.PUBLIC_URL + '/contact'} render={props => <Contact {...props} />} />
+        <Route path={process.env.PUBLIC_URL + '/'} render={props => <Home {...props} />} />
       </Switch>
     );
   }

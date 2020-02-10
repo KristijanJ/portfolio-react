@@ -59,3 +59,14 @@
     width: 80%;
   }
 }
+
+@media (max-width: 600px) {
+  .education .school {
+    float: none;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    border-left: none;
+    padding-top: 1.2rem;
+  }
+}

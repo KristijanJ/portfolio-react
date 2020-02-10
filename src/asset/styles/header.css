@@ -5,6 +5,7 @@
   left: 0;
   width: 100%;
   font-family: 'Playfair Display', serif;
+  overflow: hidden;
 }
 
 .header::after {
@@ -70,7 +71,10 @@
     transition: 400ms;
   }
   .header .open-links {
-    left: 0%;
+    left: 5%;
+    z-index: 4;
+    background: #fff;
+    padding: 1rem;
   }
   .header .links a {
     padding: 1rem 0;
